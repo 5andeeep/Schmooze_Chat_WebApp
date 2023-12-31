@@ -1,0 +1,29 @@
+.userList-box {
+  background-color: #e8e8e8;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  color: black;
+  padding: 10px 20px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+.userList-box:hover {
+  background-color: #39b3ac;
+  color: "white";
+}
+.avatar {
+  margin-right: 10px;
+  cursor: pointer;
+}
+.userBadgeList-box {
+  padding: 10px 16px;
+  border-radius: 6px;
+  margin: 5px;
+  font-size: 12px;
+  background-color: purple;
+  color: white;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}

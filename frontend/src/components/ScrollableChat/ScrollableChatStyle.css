@@ -1,0 +1,30 @@
+.message-box {
+  display: flex;
+  /* flex-direction: column; */
+  /* border: 1px solid black; */
+}
+
+.user-one {
+  width: fit-content;
+  /* background-color: #bee3f8; */
+  background-color: #ef6262;
+  /* background-color: #ffc8c8; */
+  color: white;
+  border-radius: 15px;
+  border-top-right-radius: 0px;
+  padding: 5px 10px;
+  max-width: 70%;
+  margin-block: 2px;
+}
+.user-two {
+  width: fit-content;
+  /* background-color: #b9f5d0; */
+  background-color: #5c8374;
+  /* background-color: #d2e3c8; */
+  color: white;
+  border-radius: 15px;
+  border-top-left-radius: 0px;
+  padding: 5px 10px;
+  max-width: 70%;
+  margin-block: 2px;
+}

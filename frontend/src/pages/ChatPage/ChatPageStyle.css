@@ -1,0 +1,16 @@
+.chatPage {
+  width: 98%;
+  display: flex;
+  padding-block: 10px;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: space-evenly;
+}
+.chat-section {
+  /* border: 1px solid black; */
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 85vh;
+  /* padding: 10px; */
+}

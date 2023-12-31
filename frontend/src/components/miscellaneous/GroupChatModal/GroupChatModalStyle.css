@@ -1,0 +1,20 @@
+.modal-heading {
+  font-size: 28px;
+  text-align: center;
+}
+.modal-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.group-name-input,
+.group-users-name-input {
+  margin-bottom: 10px;
+}
+
+.selected-users-box {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 16px;
+}
