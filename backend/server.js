@@ -9,13 +9,14 @@ const userRoutes = require("./routes/userRoutes");
 const chatRoutes = require("./routes/chatRoutes");
 const messageRoutes = require("./routes/messageRoutes");
 const { notFound, errorHandler } = require("../backend/middleware/errorMiddleware");
-// const connectDB = require("../backend/data/config/db");
+// const connectDB = require("../backend/config/db");
 const path = require("path");
 
 
 // constants
 const app = express();
 dotenv.config();
+// connectDB();
 // middleware
 app.use(express.json()); // to accept json data
 
@@ -55,7 +56,7 @@ app.use(errorHandler);
 
 // connecting mongoDB(dababase) with app
 mongoose
-    .connect(process.env.MONGODB_URI)
+    .connect(process.env.MONGODB_URI, { useNewUrlParser: true, useUnifiedTopology: true })
     .then((conn) => console.log(`MongoDB is connected: ${conn.connection.host}`.cyan.underline))
     .catch((err) => console.log(`Error: ${err.message}`.red.bold));
 
