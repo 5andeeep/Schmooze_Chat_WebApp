@@ -56,7 +56,7 @@ app.use(errorHandler);
 
 // connecting mongoDB(dababase) with app
 mongoose
-    .connect(process.env.MONGODB_URI, { useNewUrlParser: true, useUnifiedTopology: true })
+    .connect(process.env.MONGODB_URI)
     .then((conn) => console.log(`MongoDB is connected: ${conn.connection.host}`.cyan.underline))
     .catch((err) => console.log(`Error: ${err.message}`.red.bold));
 
