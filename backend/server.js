@@ -53,7 +53,6 @@ app.use(notFound);
 app.use(errorHandler);
 
 
-
 // connecting mongoDB(dababase) with app
 mongoose
     .connect(process.env.MONGODB_URI)
@@ -77,6 +76,7 @@ const io = require("socket.io")(server, {
     pingTimeout: 60000,
     cors: {
         origin: "http://localhost:3000", // this is frontend ENDPOINT
+        methods: ["GET", "POST"] // recently added code..
 
     }
 });

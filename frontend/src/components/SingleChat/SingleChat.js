@@ -112,7 +112,9 @@ const SingleChat = ({ fetchAgain, setFetchAgain }) => {
 
     // useEffect for socket.io(sockets)
     useEffect(() => {
-        socket = io(ENDPOINT);
+        socket = io(ENDPOINT, {
+            transports: ['websocket'], // recently added code to fix error
+        });
         socket.emit("setup", user);
         socket.on("connected", () => {
             setSocketConnected(true);
