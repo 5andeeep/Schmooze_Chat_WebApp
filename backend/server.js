@@ -1,6 +1,7 @@
 const colors = require("colors");
 const express = require("express");
 const dotenv = require("dotenv");
+const cors = require("cors");
 const mongoose = require("mongoose");
 
 // files-imports
@@ -15,6 +16,7 @@ const path = require("path");
 
 // constants
 const app = express();
+app.use(cors());
 dotenv.config();
 // connectDB();
 // middleware

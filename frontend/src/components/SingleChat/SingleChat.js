@@ -113,6 +113,10 @@ const SingleChat = ({ fetchAgain, setFetchAgain }) => {
     // useEffect for socket.io(sockets)
     useEffect(() => {
         socket = io(ENDPOINT, {
+            cors: { // recently added code to fix socket io error
+                origin: "http://localhost:5000",
+                credentials: true,
+            },
             transports: ['websocket'], // recently added code to fix error
         });
         socket.emit("setup", user);
